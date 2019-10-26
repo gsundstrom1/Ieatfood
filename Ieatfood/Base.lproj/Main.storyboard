@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ieatfood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ViE-dN-6yz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="IEatFood" id="ERi-mA-Gmj"/>
+                                </items>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NwA-MN-QdF"/>
+                                </connections>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZWH-6i-DW4">
+                                <rect key="frame" x="107" y="100" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cNy-iQ-k0b">
+                                <rect key="frame" x="107" y="142" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFK-7V-503">
+                                <rect key="frame" x="182" y="256" width="51" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="btnsave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yQ1-sm-H8O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ViE-dN-6yz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1kL-cQ-gdc"/>
+                            <constraint firstItem="cNy-iQ-k0b" firstAttribute="top" secondItem="ZWH-6i-DW4" secondAttribute="bottom" constant="8" id="Ecw-rP-e7P"/>
+                            <constraint firstItem="ViE-dN-6yz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="apr-XK-b5x"/>
+                            <constraint firstItem="ZWH-6i-DW4" firstAttribute="trailing" secondItem="cNy-iQ-k0b" secondAttribute="trailing" id="cAe-6Q-F7j"/>
+                            <constraint firstItem="ViE-dN-6yz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jul-wO-V1g"/>
+                            <constraint firstItem="ViE-dN-6yz" firstAttribute="centerX" secondItem="ZWH-6i-DW4" secondAttribute="centerX" id="plV-0j-RPp"/>
+                            <constraint firstItem="ZWH-6i-DW4" firstAttribute="leading" secondItem="cNy-iQ-k0b" secondAttribute="leading" id="qaD-pz-B64"/>
+                            <constraint firstItem="ZWH-6i-DW4" firstAttribute="top" secondItem="ViE-dN-6yz" secondAttribute="bottom" constant="12" id="rmw-fd-Ojr"/>
+                            <constraint firstItem="ZWH-6i-DW4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="wzm-Ah-edq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtname" destination="ZWH-6i-DW4" id="wSJ-mn-qfc"/>
+                        <outlet property="txtpassword" destination="cNy-iQ-k0b" id="eXv-cd-aUI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+</document>
