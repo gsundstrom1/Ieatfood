@@ -14,6 +14,8 @@
 		A744C84D23639B11000758EE /* Ieatfood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A744C84B23639B11000758EE /* Ieatfood.xcdatamodeld */; };
 		A744C84F23639B12000758EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A744C84E23639B12000758EE /* Assets.xcassets */; };
 		A744C85223639B12000758EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A744C85023639B12000758EE /* LaunchScreen.storyboard */; };
+		A7C82C65236BB88A00B1FEFD /* rainbowfood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A7C82C64236BB88900B1FEFD /* rainbowfood.jpg */; };
+		A7C82C67236BC1CF00B1FEFD /* createpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C82C66236BC1CF00B1FEFD /* createpage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A744C84E23639B12000758EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A744C85123639B12000758EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A744C85323639B12000758EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7C82C64236BB88900B1FEFD /* rainbowfood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rainbowfood.jpg; path = ../../bands/rainbowfood.jpg; sourceTree = "<group>"; };
+		A7C82C66236BC1CF00B1FEFD /* createpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createpage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,8 @@
 		A744C83623639B11000758EE = {
 			isa = PBXGroup;
 			children = (
+				A7C82C66236BC1CF00B1FEFD /* createpage.swift */,
+				A7C82C63236BB87700B1FEFD /* photos */,
 				A744C84123639B11000758EE /* Ieatfood */,
 				A744C84023639B11000758EE /* Products */,
 			);
@@ -68,6 +74,14 @@
 				A744C84B23639B11000758EE /* Ieatfood.xcdatamodeld */,
 			);
 			path = Ieatfood;
+			sourceTree = "<group>";
+		};
+		A7C82C63236BB87700B1FEFD /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				A7C82C64236BB88900B1FEFD /* rainbowfood.jpg */,
+			);
+			path = photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7C82C65236BB88A00B1FEFD /* rainbowfood.jpg in Resources */,
 				A744C85223639B12000758EE /* LaunchScreen.storyboard in Resources */,
 				A744C84F23639B12000758EE /* Assets.xcassets in Resources */,
 				A744C84A23639B11000758EE /* Main.storyboard in Resources */,
@@ -143,6 +158,7 @@
 			files = (
 				A744C84D23639B11000758EE /* Ieatfood.xcdatamodeld in Sources */,
 				A744C84723639B11000758EE /* ViewController.swift in Sources */,
+				A7C82C67236BC1CF00B1FEFD /* createpage.swift in Sources */,
 				A744C84323639B11000758EE /* AppDelegate.swift in Sources */,
 				A744C84523639B11000758EE /* SceneDelegate.swift in Sources */,
 			);
