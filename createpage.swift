@@ -17,25 +17,25 @@ class createpage: UITableViewController {
     @IBOutlet weak var place: UITextField!
     @IBAction func SaveB(_ sender: UIButton) {
         
-        defaults;: UserDefaults = UserDefaults.standard
+       let defaults: UserDefaults = UserDefaults.standard
                            defaults.set(self.place.text, forKey: "Place")
                            defaults.set(self.item.text, forKey: "Item")
             
         defaults
         .set(self
         .rating
-        .text
+            .text,
         forKey:
         "Rating")
         
         defaults
         .set(self
         .comments
-        .text
+            .text,
         forKey:
         "Comments")
                 defaults.synchronize()
-                clear()
+               // clear()
                            }
             override func viewDidLoad() {
                   super.viewDidLoad()
@@ -76,8 +76,8 @@ class createpage: UITableViewController {
     
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    //override func viewDidLoad() {
+       // super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -88,12 +88,12 @@ class createpage: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
@@ -153,4 +153,4 @@ class createpage: UITableViewController {
     }
     */
 
-}
+
